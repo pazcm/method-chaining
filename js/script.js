@@ -7,4 +7,17 @@ $(document).ready(function() {
   $("button").removeClass("makeBorder").addClass("makeRed");
  });
  
+ // paragraph slide up
+ $("button").click(function() {
+  $("p").slideUp( "slow", function() {
+   $( "button" ).click(function() {
+    $("p").slideDown();
+    });
+   });
+  
+ }); 
+
 }); 
+
+    
+  
